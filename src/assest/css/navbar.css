@@ -1,0 +1,83 @@
+/* Style cho navbar khi chưa cuộn - nền trong suốt và chữ màu trắng */
+.navbar-transparent {
+  background-color: transparent;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.navbar-transparent .nav-link,
+.navbar-transparent .contact-info span,
+.navbar-transparent .contact-info a,
+.navbar-transparent .separator,
+.navbar-transparent .dropdown-toggle {
+  color: white !important;
+}
+
+.navbar-transparent .contact-info .icon-navbar,
+.navbar-scrolled .contact-info .icon-navbar {
+  font-size: 1.2rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-transparent .contact-info .icon-navbar {
+  color: white;
+}
+
+.navbar-scrolled .contact-info .icon-navbar {
+  color: rgb(34, 34, 34);
+}
+
+/* Style cho navbar khi đã cuộn - nền trắng và chữ màu đen */
+.navbar-scrolled  {
+  background-color: rgba(255, 255, 255, 0.9); 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease-in-out;
+}
+
+
+
+.navbar-scrolled .nav-link,
+.navbar-scrolled .contact-info span,
+.navbar-scrolled .contact-info a,
+.navbar-scrolled .separator,
+.navbar-scrolled .dropdown-toggle {
+  color: rgb(34, 34, 34) !important; /* Chữ màu đen */
+}
+
+.navbar {
+  z-index: 1000;
+  width: 100%;
+  margin: 0;
+  height: 65px;
+
+}
+
+.navbar-brand img {
+  width: 60px; /* Kích thước logo */
+  height: 60px;
+  object-fit: cover;
+  align-items: center;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  color: white;
+  margin-right: 75px;
+}
+
+.nav-link {
+  font-weight: 500;
+  margin: 0 10px;
+}
+
+.separator {
+  margin: 0 10px;
+}
+
+.dropdown-toggle {
+  color: white !important;
+}
+.nav-link:hover {
+  color: rgb(16, 151, 73)!important
+}

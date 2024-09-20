@@ -1,0 +1,93 @@
+.slider-container-discount:hover
+.slider-container-discount:hover  {
+  opacity: 1 !important;
+}
+.slider-container-discount img {
+    width: 100%;
+    height: 690px; 
+    object-fit: cover; 
+  }
+
+  .slider-caption-discount {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%; 
+    text-align: center;
+  } 
+
+  .slider-title-discount {
+    font-size: 32px !important;
+    font-weight: bold;
+    color: #ff9900 !important;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    font-size: 81.2px;
+    text-align: center;
+    line-height: 81.2px;
+    text-shadow: rgb(0% 0% 0% / 0.3) 1px 1px 1px;
+    color: rgb(100% 100% 100%);
+    font-family: 'CustomFont', cursive; 
+  }  
+
+  .slider-subtitle-discount {
+    font-size: 20px !important;
+    color: rgb(100% 100% 100%);
+    text-shadow:rgb(0% 0% 0% / 0.3) 1px 1px 1px;
+    text-align: center;
+    font-weight: 700;
+    font-family: 'CustomFont', cursive; 
+    font-weight: normal;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    margin-bottom: 30px;
+  }
+
+  .slider-buttons-discount button {
+    margin-right: 10px;
+  
+  }
+  
+  .slider-buttons-discount{
+    gap: 0.2rem !important;
+  }
+
+  .btn-booking-discount {
+    background-color: #f1f1f1 !important; 
+    color: #666 !important; 
+    border-radius: 50px !important;
+    font-weight: bold !important;
+    padding: 10px 20px !important;
+    display: inline-block;
+    font-size: 12.8px;
+    text-transform: uppercase;
+    font-weight: 700;
+    height: 38px;
+  }
+
+  .btn-contact-discount{
+    background-color: #f1f1f1 !important; 
+    color: #666 !important; 
+    border-radius: 50px !important;
+    font-weight: bold !important;
+    padding: 10px 20px !important;
+    display: inline-block;
+    font-size: 12.8px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12.8px;
+    width: 100px;
+    height: 38px
+  }
+
+ .btn-contact-discount:hover {
+    background-color:rgb(29,86,53)!important; 
+    color: #fff !important; 
+  }
+
+
+ .btn-booking-discount:hover {
+    background-color:rgb(29,86,53) !important; 
+    color: #fff !important; 
+  }
+  

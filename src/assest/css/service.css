@@ -1,0 +1,50 @@
+.service-container{
+    background-color: rgb(243,246,235);
+    text-align: center;
+    padding: 20px;
+}
+.service-container h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 30px 0 0;
+    font-size: 40px;
+  }
+  
+  .service-container h2 {
+    font-family: 'Brush Script MT', cursive;
+    color: rgb(29,86,53);
+    font-size: 3rem;
+  }
+  
+  .service-details {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .service-detail {
+    position: relative;
+  }
+  
+  .service-detail img {
+    width: 330px;
+    height: 400px;
+    object-fit: cover;
+    border: 2px solid #ddd; 
+    border-radius: 8px; 
+  }
+  
+  .caption {
+    position: absolute;
+    bottom: 10px; 
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    text-align: center;
+    font-family: 'Brush Script MT', cursive;
+  }
+
+

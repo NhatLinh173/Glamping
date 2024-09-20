@@ -1,0 +1,98 @@
+/* Footer CSS */
+.footer {
+    background-color: #1a5e42; /* Màu nền */
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-column {
+    list-style: none;
+  }
+  
+  .footer-column h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .footer-column ul {
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  .footer-column li {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+  
+  .footer-column li:hover {
+    color: #ff9900;
+    cursor: pointer;
+  }
+  
+  .footer-logo img {
+    max-height: 80px; /* Đặt chiều cao logo */
+  }
+  
+  .footer-bottom {
+    margin-top: 30px;
+    color: #fff;
+  }
+  
+  .footer-bottom p {
+    font-size: 14px;
+    font-weight: 600 ;
+    margin: 0;
+
+  }
+  
+  /* Floating buttons CSS */
+  .floating-buttons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .zalo-btn, .phone-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .zalo-btn {
+    background-color: #007aff; /* Màu Zalo */
+  }
+  
+  .phone-btn {
+    background-color: #ff3b30; /* Màu đỏ cho Phone */
+  }
+  
+  /* Animation for shake effect */
+  .shake-animation {
+    animation: shake 1.5s infinite;
+  }
+  
+  @keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+  }
+  

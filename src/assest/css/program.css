@@ -1,0 +1,73 @@
+.program-registration {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+  }
+  
+  .title span {
+    font-size: 1.5rem;
+    color: black;
+  }
+  
+  .title br {
+    margin-bottom: 10px;
+  }
+  
+  .accordion {
+    margin-top: 20px;
+    border: none; /* Loại bỏ viền cho toàn bộ accordion */
+  }
+  
+  .accordion-item {
+    border: none;
+    border-bottom: 1px solid #ddd; /* Chỉ có viền ở dưới */
+    padding: 10px 0;
+  }
+  
+  .accordion-header {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+  
+  .accordion-header h2 {
+    font-size: 1rem;
+    margin: 0;
+    color: #333;
+    transition: color 0.3s ease; /* Thêm hiệu ứng cho màu chữ */
+  }
+  
+  .accordion-header.active h2 {
+    color: #ff9900; /* Thay đổi màu chữ khi accordion mở */
+  }
+  
+  .chevron {
+    font-size: 1.2rem;
+    transition: transform 0.3s ease; /* Thêm hiệu ứng xoay cho icon */
+  }
+  
+  .accordion-header.active .chevron {
+    transform: rotate(180deg); /* Xoay icon khi active */
+  }
+  
+  .accordion-content {
+    margin-top: 10px;
+    padding-left: 20px;
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+  
+  .accordion-item:hover h2 {
+    color: #ff9900;
+  }
+  
