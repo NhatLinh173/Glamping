@@ -1,7 +1,7 @@
 import React from "react";
 import "../../assest/css/introduce.css";
-import glamping from "../../assest/image/AdobeStock_565333598.webp";
-import stream from "../../assest/image/stream.jpg";
+import glamping from "../../assest/image/New Image/DeWatermark.ai_1733415866836.jpg";
+import stream from "../../assest/image/New Image/3d43313c82fc38a261ed.jpg";
 const Introduce = () => {
   return (
     <div className="introduce-wrapper">
@@ -21,7 +21,11 @@ const Introduce = () => {
           </p>
         </div>
         <div className="introduce-image">
-          <img src={glamping} alt="Glamping" />
+          <img
+            src={glamping}
+            alt="Glamping"
+            style={{ width: "600px", height: "400px", objectFit: "cover" }}
+          />
         </div>
       </div>
 
@@ -44,7 +48,12 @@ const Introduce = () => {
           </p>
         </div>
       </div>
-      <button className="btn-introduce">Liên Hệ Đặt Chỗ Ngay</button>
+      <button
+        className="btn-introduce"
+        onClick={() => window.open("https://zalo.me/0344038365", "_blank")}
+      >
+        Liên Hệ Đặt Chỗ Ngay
+      </button>
     </div>
   );
 };

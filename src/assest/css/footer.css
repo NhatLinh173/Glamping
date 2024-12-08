@@ -1,6 +1,6 @@
 /* Footer CSS */
 .footer {
-    background-color: #1a5e42; /* Màu nền */
+    background-color: #0b312b; /* Màu nền */
     color: white;
     padding: 40px 0;
     text-align: center;
@@ -39,7 +39,7 @@
   }
   
   .footer-logo img {
-    max-height: 80px; /* Đặt chiều cao logo */
+    max-height: 150px; 
   }
   
   .footer-bottom {

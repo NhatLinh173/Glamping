@@ -1,8 +1,8 @@
 import React from "react";
 import "../../assest/css/service.css";
-import stream from "../../assest/image/suoi2.jpg";
-import glamping from "../../assest/image/glamping.jpg";
-import food from "../../assest/image/food2.jpg";
+import stream from "../../assest/image/New Image/c479306cd5ac6ff236bd56.jpg";
+import glamping from "../../assest/image/New Image/c7397917d935636b3a2450.jpg";
+import food from "../../assest/image/New Image/pork.jpg";
 const Service = () => {
   return (
     <div className="service-container">

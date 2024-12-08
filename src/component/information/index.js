@@ -1,5 +1,5 @@
 import React from "react";
-import banner1 from "../../assest/image/Roc-Rach-Glamping-Banner-4.jpg";
+import banner1 from "../../assest/image/New Image/56577a7eda5c6002394d35.jpg";
 import { CiFacebook, CiInstagram } from "react-icons/ci";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa6";
 import "../../assest/css/infomation.css";
@@ -18,8 +18,12 @@ const Information = () => {
           phong cách “sang chảnh” hơn Camping.
         </p>
         <div className="intro-icon">
-          <CiFacebook className="icon icon-face" />
-          <CiInstagram className="icon icon-ins" />
+          <a href="https://www.facebook.com/ApangGlamping">
+            <CiFacebook className="icon icon-face" />
+          </a>
+          <a href="https://www.instagram.com/apangglamping?fbclid=IwY2xjawFbsjJleHRuA2FlbQIxMAABHUGJofAvo-_db9FxP2X_4oy7WYT7oefXl9g7NJkxUoCEnLKQg9rA0p7eaQ_aem_IwkCB2tK4-rOh4fEkxnPaA">
+            <CiInstagram className="icon icon-ins" />
+          </a>
         </div>
         <div className="intro-learn-more">
           <a href="/intro" className="learn-more-info">

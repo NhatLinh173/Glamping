@@ -1,0 +1,105 @@
+/* Modal overlay */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  /* Modal content */
+  .modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 800px;
+    max-height: 600px;
+    height: 100%;
+    width: 100%;
+    position: relative;
+  }
+  
+  /* Close button */
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  /* Modal title */
+  .modal-title {
+    font-size: 30px;  /* Lớn hơn một chút */
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+  }
+  
+  /* Modal description */
+  .modal-description {
+    font-size: 18px; /* Lớn hơn để dễ đọc */
+    margin-bottom: 15px;
+    text-align: center;  /* Căn giữa */
+    color: #555;
+  }
+  
+  /* Modal activities list */
+  .modal-list {
+    list-style-type: disc;  /* Thêm dấu chấm trước mỗi mục */
+    padding-left: 20px;
+  }
+  
+  .modal-list li {
+    font-size: 18px;  /* Lớn hơn để thông tin rõ ràng hơn */
+    margin: 10px 0;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  /* Modal images */
+  .modal-images {
+    display: flex;
+    flex-wrap: wrap; /* Cho phép hình ảnh xuống dòng nếu cần */
+    justify-content: center; /* Canh giữa các hình ảnh */
+    gap: 20px; /* Khoảng cách giữa các hình ảnh */
+    margin-bottom: 20px; /* Khoảng cách dưới cùng */
+  }
+  
+  .modal-image {
+    width: 200px; /* Thay đổi kích thước hình ảnh */
+    height: 200px; /* Thay đổi chiều cao hình ảnh */
+    object-fit: cover; /* Cắt hình ảnh để vừa với khung */
+    border-radius: 10px; /* Bo góc cho hình ảnh */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Thêm bóng đổ cho hình ảnh */
+    transition: transform 0.3s ease; /* Hiệu ứng phóng to khi hover */
+  }
+  
+  .modal-image:hover {
+    transform: scale(1.1); /* Phóng to hình ảnh */
+  }
+
+  .register-btn {
+    display: inline-block; /* Biến nút thành inline-block để căn giữa */
+    padding: 10px 20px; /* Khoảng cách bên trong nút */
+    font-size: 16px; /* Kích thước chữ trong nút */
+    background-color: #0b312b; /* Màu nền của nút */
+    color: white; /* Màu chữ của nút */
+    border: none; /* Bỏ viền */
+    border-radius: 5px; /* Bo tròn góc nút */
+    cursor: pointer; /* Con trỏ thay đổi khi hover */
+    margin-top: 10px; /* Khoảng cách từ các phần phía trên */
+    text-align: center; 
+  }
+  
+  .register-btn:hover {
+    background-color: #0b312b; /* Màu nền khi hover */
+  }

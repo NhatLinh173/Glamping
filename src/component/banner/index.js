@@ -6,7 +6,8 @@ const Banner = () => {
     <div className="banner-container">
       <div className="banner-content">
         <div className="banner-info">
-          <p>A Păng Chào Mừng Các Bạn Đến Chơi!</p>
+          <p>Chào Mừng Các Bạn Đến Với!</p>
+          <p style={{ color: "rgb(100% 60% 0%)" }}>A Păng </p>
         </div>
       </div>
     </div>

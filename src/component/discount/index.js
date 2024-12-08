@@ -1,7 +1,7 @@
 import React from "react";
 import { Carousel } from "react-bootstrap";
 import "../../assest/css/discount.css";
-import banner1 from "../../assest/image/Roc-Rach-Glamping-Banner-4.jpg";
+import banner1 from "../../assest/image/New Image/d486d29037508d0ed44154.jpg";
 const Discount = () => {
   return (
     <div className="slider-container-discount">
@@ -19,8 +19,22 @@ const Discount = () => {
               Cho những khách hàng đăng ký đầu tiên hoặc quay lại sau lần 3
             </h2>
             <div className="slider-buttons">
-              <button className="btn btn-booking-discount">Đặt Lịch</button>
-              <button className="btn btn-contact-discount">Liên Hệ</button>
+              <button
+                className="btn btn-booking-discount"
+                onClick={() =>
+                  window.open("https://zalo.me/0344038365", "_blank")
+                }
+              >
+                Đặt Lịch
+              </button>
+              <button
+                className="btn btn-contact-discount"
+                onClick={() =>
+                  window.open("https://zalo.me/0344038365", "_blank")
+                }
+              >
+                Liên Hệ
+              </button>
             </div>
           </Carousel.Caption>
         </Carousel.Item>

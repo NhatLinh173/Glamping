@@ -2,7 +2,7 @@ import React from "react";
 import { FaPhoneAlt } from "react-icons/fa";
 import { SiZalo } from "react-icons/si";
 import "../../assest/css/footer.css"; // Đảm bảo đường dẫn CSS đúng
-import logo2 from "../../assest/image/A_Pang_glamping__9_-removebg.png";
+import logo2 from "../../assest/image/logo png-07.png";
 const Footer = () => {
   return (
     <footer className="footer">
@@ -47,15 +47,16 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <div className="footer-bottom">
-        <p>Copyright 2024 © A Păng Glamping</p>
-      </div>
       <div className="floating-buttons">
         <div className="zalo-btn shake-animation">
-          <SiZalo />
+          <a>
+            <SiZalo />
+          </a>
         </div>
         <div className="phone-btn shake-animation">
-          <FaPhoneAlt />
+          <a href="tel:0344038365">
+            <FaPhoneAlt />
+          </a>
         </div>
       </div>
     </footer>
