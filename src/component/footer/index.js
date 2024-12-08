@@ -49,7 +49,9 @@ const Footer = () => {
       </div>
       <div className="floating-buttons">
         <div className="zalo-btn shake-animation">
-          <a>
+          <a
+            onClick={() => window.open("https://zalo.me/0344038365", "_blank")}
+          >
             <SiZalo />
           </a>
         </div>
