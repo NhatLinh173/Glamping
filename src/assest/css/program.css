@@ -43,7 +43,9 @@
     font-size: 1rem;
     margin: 0;
     color: #333;
-    transition: color 0.3s ease; /* Thêm hiệu ứng cho màu chữ */
+    transition: color 0.3s ease; 
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
   }
   
   .accordion-header.active h2 {
@@ -63,7 +65,7 @@
     margin-top: 10px;
     padding-left: 20px;
     color: #666;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     line-height: 1.5;
   }
   

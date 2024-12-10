@@ -5,9 +5,9 @@ import Modal from "./Modal"; // Import modal component
 
 const ProgramRegistration = () => {
   const [activeSection, setActiveSection] = useState(null);
-  const [isModalOpen, setIsModalOpen] = useState(false); // Trạng thái để mở modal
-  const [modalContent, setModalContent] = useState(null); // Nội dung của modal
-  const [modalKey, setModalKey] = useState(""); // Key của modal để phân biệt các modal
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalContent, setModalContent] = useState(null);
+  const [modalKey, setModalKey] = useState("");
 
   const toggleSection = (section) => {
     setActiveSection(activeSection === section ? null : section);
