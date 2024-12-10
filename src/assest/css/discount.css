@@ -18,29 +18,29 @@
   } 
 
   .slider-title-discount {
-    font-size: 32px !important;
-    font-weight: bold;
+    font-size: 4.5rem !important;  /* Tăng kích thước */
+    font-weight: 700;
     color: #ff9900 !important;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-    font-size: 81.2px;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);  /* Tăng bóng đổ */
     text-align: center;
-    line-height: 81.2px;
-    text-shadow: rgb(0% 0% 0% / 0.3) 1px 1px 1px;
-    color: rgb(100% 100% 100%);
-    font-family: 'CustomFont', cursive; 
+    line-height: 1.2;
+    font-family: 'Dancing Script', cursive;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
   }  
 
   .slider-subtitle-discount {
-    font-size: 20px !important;
-    color: rgb(100% 100% 100%);
-    text-shadow:rgb(0% 0% 0% / 0.3) 1px 1px 1px;
+    font-size: 1.3rem !important;  /* Tăng kích thước */
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     text-align: center;
-    font-weight: 700;
-    font-family: 'CustomFont', cursive; 
-    font-weight: normal;
-    color: #fff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    font-family: 'Roboto', sans-serif;  /* Đổi font cho dễ đọc */
+    font-weight: 500;
+    line-height: 1.4;
     margin-bottom: 30px;
+    max-width: 800px;  /* Giới hạn chiều rộng */
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .slider-buttons-discount button {
@@ -49,7 +49,10 @@
   }
   
   .slider-buttons-discount{
-    gap: 0.2rem !important;
+    display: flex;
+    gap: 1rem !important;  /* Tăng khoảng cách giữa các nút */
+    justify-content: center;
+    margin-top: 20px;
   }
 
   .btn-booking-discount {
@@ -91,3 +94,12 @@
     color: #fff !important; 
   }
   
+  .btn-booking-discount,
+.btn-contact-discount {
+  padding: 12px 30px !important;  /* Tăng padding */
+  font-size: 1rem !important;  /* Tăng font size */
+  font-weight: 600 !important;
+  transition: all 0.3s ease;
+  min-width: 150px;  /* Đặt chiều rộng tối thiểu */
+  height: auto;  /* Để height tự động theo content */
+}

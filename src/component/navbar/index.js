@@ -1,15 +1,16 @@
 import React, { useEffect, useState } from "react";
+import { Dropdown, Navbar, Nav, Container } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../../assest/css/navbar.css";
 import logo from "../../assest/image/logo png-07.png";
 import logo2 from "../../assest/image/logo png-07.png";
-import { Dropdown, Navbar, Nav, Container } from "react-bootstrap";
 import { FaPhoneAlt } from "react-icons/fa";
 import { GoClock } from "react-icons/go";
 import { CiMail } from "react-icons/ci";
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
+  const [expanded, setExpanded] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,14 +25,24 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Hàm đóng menu
+  const closeMenu = () => {
+    setExpanded(false);
+  };
+
+  // Hàm xử lý toggle menu
+  const toggleMenu = () => {
+    setExpanded(!expanded);
+  };
+
   return (
     <Navbar
       expand="lg"
       fixed="top"
+      expanded={expanded}
       className={`navbar ${
         scrolled ? "navbar-scrolled" : "navbar-transparent"
       }`}
-      style={{ backgroundColor: "#0b312b" }}
     >
       <Container>
         <div className="contact-info d-none d-lg-flex">
@@ -53,40 +64,47 @@ const Header = () => {
           />
         </Navbar.Brand>
 
-        <Navbar.Toggle
-          aria-controls="navbarResponsive"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarResponsive"
-          className="navbarResponsive"
+        <Navbar.Toggle aria-controls="navbarResponsive" onClick={toggleMenu} />
+
+        <Navbar.Collapse
+          id="navbarResponsive"
+          className={expanded ? "show" : ""}
         >
-          <span className="navbar-toggler-icon"></span>
-        </Navbar.Toggle>
-        <Navbar.Collapse id="navbarResponsive">
           <Nav className="ms-auto">
-            <Nav.Link href="/">HOME</Nav.Link>
-            <span className="separator">|</span>
-            <Nav.Link href="/about">GIỚI THIỆU</Nav.Link>
-            <span className="separator">|</span>
-            <Nav.Link href="/services">GÓI DỊCH VỤ</Nav.Link>
-            <span className="separator">|</span>
-            <Nav.Link href="/program">CHƯƠNG TRÌNH</Nav.Link>
-            <span className="separator">|</span>
+            <Nav.Link href="/" onClick={closeMenu}>
+              HOME
+            </Nav.Link>
+            <span className="separator d-none d-lg-inline">|</span>
+            <Nav.Link href="/about" onClick={closeMenu}>
+              GIỚI THIỆU
+            </Nav.Link>
+            <span className="separator d-none d-lg-inline">|</span>
+            <Nav.Link href="/services" onClick={closeMenu}>
+              GÓI DỊCH VỤ
+            </Nav.Link>
+            <span className="separator d-none d-lg-inline">|</span>
+            <Nav.Link href="/program" onClick={closeMenu}>
+              CHƯƠNG TRÌNH
+            </Nav.Link>
+            <span className="separator d-none d-lg-inline">|</span>
             <Dropdown>
               <Dropdown.Toggle variant="link" id="dropdown-contact">
                 LIÊN HỆ
               </Dropdown.Toggle>
               <Dropdown.Menu>
                 <Dropdown.Item
-                  onClick={() =>
-                    window.open("https://zalo.me/0344038365", "_blank")
-                  }
+                  onClick={() => {
+                    window.open("https://zalo.me/0344038365", "_blank");
+                    closeMenu();
+                  }}
                 >
                   BOOKING
                 </Dropdown.Item>
                 <Dropdown.Item
-                  href="https://www.google.com/maps/place/A'P%C4%83ng+Glamping/@15.9617977,107.7587094,17z/data=!3m1!4b1!4m6!3m5!1s0x3141e700239c3ff5:0x1a54f4ceb5921ebc!8m2!3d15.9617926!4d107.7612843!16s%2Fg%2F11wc89452d?entry=ttu&g_ep=EgoyMDI0MTIwNC4wIKXMDSoASAFQAw%3D%3D"
+                  href="https://www.google.com/maps..."
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={closeMenu}
                 >
                   CHỈ DẪN ĐƯỜNG ĐI
                 </Dropdown.Item>

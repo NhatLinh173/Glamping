@@ -130,6 +130,15 @@
   justify-content: center;
   align-items: center;
   gap: 15px;
+  transition: height 0.3s ease-in-out;
+  flex-grow: 0;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .navbar-collapse .nav-link {
@@ -142,90 +151,147 @@
 }
 
 @media (max-width: 1200px) {
-  .nav-link {
-    font-size: 14px; /* Kích thước chữ nhỏ hơn khi màn hình nhỏ hơn 1200px */
-  }
-  .contact-info {
-    font-size: 14px;
-    gap: 8px;
-  }
-  .navbar-brand {
-    gap: 8px;
-  }
-  .navbar-brand {
-    margin-left: 0 !important;
+  .navbar {
+    height: 65px;
+    padding: 0 20px;
   }
 
   .navbar-brand img {
     width: 80px;
-    height: auto;
+    height: 80px;
+    margin-top: 10px;
+  }
+
+  .nav-link {
+    font-size: 14px;
+    margin: 0 8px;
+    text-align: center;
+    padding: 0.5rem 1rem;
+  }
+
+  .contact-info {
+    font-size: 14px;
+    gap: 8px;
+  }
+
+  .separator {
+    margin: 0 5px !important;
   }
 }
 
 @media (max-width: 992px) {
-  .contact-info {
-    font-size: 12px;
-    gap: 6px;
-    flex-wrap: wrap;
+  .navbar {
+    height: 60px;
+    background-color: #0b312b !important;
   }
-  .navbar-brand {
+
+  .navbar-collapse {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: #0b312b;
+    padding: 20px;
+    z-index: 1000;
+    flex-direction: column !important;
+  }
+
+  .nav-link {
+    color: white !important;
+    text-align: center;
+    padding: 12px 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .separator {
     display: none !important;
-    margin-left: 0 !important;
   }
+
   .navbar-toggler {
-    width: 50px;
-    height: 50px;
+    display: block;
+    margin-left: auto;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+  }
+
+  .dropdown-menu {
+    background-color: #0b312b;
+    border: none;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .dropdown {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .dropdown-item {
+    color: white !important;
+    text-align: center;
+  }
+
+  .dropdown-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .navbar-collapse {
+    display: none !important;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: #0b312b;
+    padding: 20px;
+    z-index: 1000;
+  }
+
+  .navbar-collapse.show {
+    display: block !important;
+  }
+
+  .navbar-toggler {
+    display: block;
   }
 }
 
+/* Mobile styles (< 768px) */
 @media (max-width: 768px) {
   .navbar {
-    background-color: white;
-    padding: 10px 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 50px;
+    padding: 0 15px;
   }
 
   .navbar-brand img {
     width: 60px;
-    height: auto;
+    height: 60px;
+    margin-top: 5px;
   }
 
-  .contact-info {
-    display: none;
+  .nav-link {
+    font-size: 16px;
+    padding: 10px 0;
   }
 
   .navbar-collapse {
-    background-color: rgba(255, 255, 255, 0.95);
-    padding: 20px;
+    top: 50px;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+  .navbar {
+    padding: 0 10px;
   }
 
-  .navbar-collapse .nav-link {
-    font-size: 18px;
-    padding: 10px 0;
-    display: block;
-    text-align: center;
-    color: #222;
-    transition: color 0.3s ease-in-out;
-  }
-
-  .navbar-collapse .separator {
-    display: none;
-  }
-
-  .dropdown-toggle {
-    color: #222 !important;
-    text-align: center;
-    width: 100%;
-  }
-
-  .navbar-toggler {
-    margin-right: 0;
-    border: none;
-    outline: none;
-  }
-
-  .navbar-toggler-icon {
-    color: #000;
+  .nav-link {
+    font-size: 14px;
+    padding: 8px 0;
   }
 }
 
@@ -234,7 +300,34 @@
 }
 
 .navbar-scrolled {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: #0b312b;
   transition: background-color 0.3s ease-in-out;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Tăng cường bóng */
+}
+
+
+.navbar {
+  height: 75px;
+  padding: 0 30px;
+}
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand img {
+  width: 100px;
+  height: 100px;
+  margin-top: 15px;
+}
+
+.nav-link {
+  font-size: 16px;
+  margin: 0 12px;
+}
+
+.contact-info {
+  font-size: 16px;
+  gap: 12px;
 }

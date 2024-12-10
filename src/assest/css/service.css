@@ -11,9 +11,10 @@
   }
   
   .service-container h2 {
-    font-family: 'Brush Script MT', cursive;
+    font-family: 'Dancing Script', cursive;
     color: rgb(29,86,53);
-    font-size: 3rem;
+    font-size: 3.5rem;  /* Tăng size chữ lên một chút */
+    font-weight: 700; 
   }
   
   .service-details {
@@ -44,7 +45,10 @@
     border-radius: 5px;
     font-size: 1.4rem;
     text-align: center;
-    font-family: 'Brush Script MT', cursive;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.3rem; 
+    font-weight: 700;  
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); 
   }
 
 

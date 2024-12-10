@@ -1,7 +1,7 @@
 import React from "react";
 import { Carousel } from "react-bootstrap";
 import "../../assest/css/discount.css";
-import banner1 from "../../assest/image/New Image/d486d29037508d0ed44154.jpg";
+import banner1 from "../../assest/image/New Image/new.jpg";
 const Discount = () => {
   return (
     <div className="slider-container-discount">

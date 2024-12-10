@@ -48,7 +48,7 @@
 }
 
 .food-name {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Dancing Script', sans-serif;
   position: relative;
   margin-bottom: 10px;
   padding-left: 10px;
@@ -64,7 +64,7 @@
 .food-name-title p{
   /* Không in đậm */
   font-style: italic; /* In nghiêng cho các mục */
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Dancing Script', sans-serif;
 }
 
 .food-detail {

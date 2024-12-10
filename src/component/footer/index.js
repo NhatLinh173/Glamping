@@ -55,11 +55,6 @@ const Footer = () => {
             <SiZalo />
           </a>
         </div>
-        <div className="phone-btn shake-animation">
-          <a href="tel:0344038365">
-            <FaPhoneAlt />
-          </a>
-        </div>
       </div>
     </footer>
   );
